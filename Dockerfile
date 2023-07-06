@@ -13,7 +13,6 @@ RUN docker-php-ext-install \
 
 RUN composer --no-interaction --working-dir=/repo require flow/jsonpath:0.4.0
 RUN composer --no-interaction --working-dir=/repo require hoa/console:^3.17
-RUN composer --no-interaction --working-dir=/repo require browserstack/browserstack-local:^1.1
 
 EXPOSE 9000
 
