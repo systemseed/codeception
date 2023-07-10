@@ -14,7 +14,8 @@ RUN docker-php-ext-install \
 RUN composer --no-interaction --working-dir=/repo require flow/jsonpath:0.4.0 \
     hoa/console:^3.17 \
     browserstack/browserstack-local:^1.1 \
-    mailslurp/mailslurp-client-php
+    mailslurp/mailslurp-client-php \
+    codeception/robo-paracept:2.0.3 \
+    consolidation/robo:3.0.12
 
 EXPOSE 9000
-
